@@ -8,26 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <div class="header_logo"><img src="img/logo.png"></div>
-            <div class="header_title">Микоцин</div>
+    <header class="header flex--end">
+        <div class="logo flex--end">
+            <div class="header__logo"><img src="img/logo.png" alt="Логотип"></div>
+            <div class="header__title">Микоцин</div>
         </div>
-        <ul class="small_header">
+        <ul class="header__small flex--end">
             <div class="bullet-logo">
-                <img src="img/No1.png">
+                <img src="img/No1.png" alt="Номер 1">
             </div>
             <div class="bullet-text">
                 №1 Для избавления от любого типа грибка
             </div>
             <div class="bullet-logo">
-                <img src="img/rec.png">
+                <img src="img/rec.png" alt="Рекомендовано">
             </div>
             <div class="bullet-text">
                 Рекомендован дерматологами
             </div>
             <div class="bullet-logo">
-                <img src="img/client.png">
+                <img src="img/client.png" alt="Клиенты">
             </div>
             <div class="bullet-text">
                 13000+ довольных клиентов за 2018 год
@@ -35,89 +35,108 @@
         </ul>
     </header>
     <main>
-        <section class="order">
+        <section class="order flex--end">
             <div class="intro">
-                <div class="intro_title">
-                    Комплексное избавление </br> от грибка -
-                    <p><span class ="red-line-lg">изнутри</span> и <span class ="green-line-lg">снаружи</span></p>
+                <div class="intro__title">
+                    <h1>Комплексное избавление от грибка</h1> -
+                    <span class ="red-line-lg">изнутри</span> и <span class ="green-line-lg">снаружи</span>
                 </div>
-                <div class="intro_items">
-                    <ul class="intro_bullets">
-                        <li class="intro_bullet">2в1</li>
-                        <li class="intro_bullet">1</li>
-                        <li class="intro_bullet">2</li>
+                <div class="intro__items">
+                    <ul class="intro__bullets flex--column-around">
+                        <li class="intro__bullet flex--center">2в1</li>
+                        <li class="intro__bullet flex--center">1</li>
+                        <li class="intro__bullet flex--center">2</li>
                     </ul>
-                    <ul class="intro_info">
-                        <li class="intro_text">
+                    <ul class="intro__info flex--column-around">
+                        <li class="intro__info_text">
                             Комплекс Микоцин <span class="bold"> устраняет зуд, неприятный запах </span> и возвращает эстетичный вид
                         </li>
-                        <li class="intro_text">
+                        <li class="intro__info_text">
                             <span class ="red-line-sm">Таблетки</span> Микоцин <span class="bold">уничтожают все виды грибка</span> на ногтях и коже
                         </li>
-                        <li class="intro_text">
+                        <li class="intro__info_text">
                             <span class ="green-line-sm">Гель</span> Микоцин <span class="bold">восстанавливает кожу</span> и создает на ней <span class="bold">защитный барьер</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="form">
-                <div class="free"><img src="img/ship.png">Бесплатно</div>
-                <div class="form_wrap">
-                    <div class="form_title">
-                        <b>Успейте заказать со скидкой</br><span class="orange_text">до 10.09.2018</span></b>
+            <form class="form" action="" method="post">
+                <div class="free flex--center"><img src="img/ship.png" alt="Доставка">Бесплатно</div>
+                <div class="form__wrap">
+                    <div class="form__title">
+                        <b>Успейте заказать со скидкой <span class="orange-text">до 10.09.2018</span></b>
                     </div>
                     <div class="price">
-                        <div class="old_price">
+                        <div class="old__price">
                             старая цена
-                            <div class="old_price_val"><del>918&#8381;</del></div>
+                            <div class="old__price_val"><del class="cross">918&#8381;</del></div>
                         </div>
-                        <div class="new_price">
+                        <div class="new__price">
                             новая цена
-                            <div class="new_price_val">459&#8381;</div>
+                            <div class="new__price_val">459&#8381;</div>
                         </div>
                     </div>
-                    <form action="" method="post">
-                        <div class="form_name">
+                    <div class="form__actions flex--column-around">
+                        <div class="form__name">
                             <input class="name-input" name="name" placeholder="Имя" type="text" required>
                         </div>
-                        <div class="form_tel">
+                        <div class="form__tel">
                             <input class="tel-input" name="phone" placeholder="Телефон" type="tel" required>
                         </div>
                         <div class="button">
-                            <button class="btn" type="submit"> Заказать <p>со скидкой</p></button>
+                            <button class="btn" type="submit"> Заказать <span class="text_sm">со скидкой</span></button>
                         </div>
                     </form>
-                    <div class="form_left">
+                    <div class="form__left">
                         Осталось <span class="green-text">10</span> упаковок со скидкой
                     </div>
                 </div>
-                <div class="form_security">
+                <div class="form__security flex--center">
                     <img src="img/secure.png"> Ваши данные защищены!
                 </div>
                 </div>
             </div>
         </section>
-        <section class="info">
-            <img src="/img/logo.png">
-            <h1>Грибок - Это опасная инфекция</h1>
-            <h3>которая угрожает вам и вашим близким, ведь с каждым днем грибок приводит к:</h3>
-            <div class="effects">
-                <div class="card">
-                    <img src="#"><h3>Сложным формам аллергии</h3>
-                    <p>Может появиться сильная реакция на привычную пищу, одежду, средства гигиены</p>
+        <section class="main__info flex--center">
+            <div class="info__title">
+                <div class="info__title-lg">
+                    Грибок - это опасная инфекция
                 </div>
-                <div class="card">
-                    <img src="#"><h3>Потере ногтя и ампутации пальца</h3>
-                    <p>После полного разрушения ногтя грибок распостраняется на палец, что приводит к его ампутации</p>
-                </div>
-                <div class="card">
-                    <img src="#"><h3>Сложным формам аллергии</h3>
-                    <p>Может привести к повреждениям мозга, слепоте, отказу печени, почек и сердца</p>
+                <div class="info__title-sm">
+                    которая угрожает вам и вашим близким, ведь с каждым днем грибок приводит к:
                 </div>
             </div>
-            <div class="output">
-                <img src="#" alt="statistics">
-                <p>Статистика: каждые 60 секунд врачи диагностируют опасные поражения внутренних органов, вызванные грибком, у 1-го пациента</p>
+            <div class="info__effects">
+                <div class="info__effects_card">
+                    <div class="card__main">
+                        <div class="card__main-img"><img class="img-med" src="img/allergy.png" alt="Аллергия"></div>
+                        <p class="card__main-title">Сложным формам аллергии</p>
+                    </div>
+                    <div class="card__description">
+                        <p>Может появиться сильная реакция на привычную пищу, одежду, средства гигиены</p>
+                    </div>
+                </div>
+                <div class="info__effects_card">
+                    <div class="card__main">
+                        <div class="card__main-img"><img class="img-med" src="img/nail.png" alt="Разрушение ногтя"></div>
+                        <p class="card__main-title">Потере ногтя и ампутации пальца</p>
+                    </div>
+                    <div class="card__description">
+                        <p>После полного разрушения ногтя грибок распостраняется на палец, что приводит к его ампутации</p>
+                    </div>
+                </div>
+                <div class="info__effects_card">
+                    <div class="card__main">
+                        <div class="card__main-img"><img class="img-med" src="img/hospital.png" alt="Капельница"></div>
+                        <p class="card__main-title">Тяжелому поражению внутренних органов</p>
+                    </div>
+                    <div class="card__description">
+                        <p>Может привести к повреждениям мозга, слепоте, отказу печени, почек и сердца</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info__output">
+                <p class="info__output-text"><span class="bold">Статистика:</span>  каждые 60 секунд врачи диагностируют опасные поражения внутренних органов, вызванные грибком, у 1-го пациента</p>
             </div>
         </section>
     </main>
